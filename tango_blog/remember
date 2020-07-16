@@ -1,0 +1,19 @@
+for crispy!!!
+
+pip install django-crispy-forms
+
+in main project installed app
+'crispy_forms'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap version'
+
+
+Pagination===
+
+from django.core.paginator import Paginator
+posts = ['1','2','3','4','5']
+p = Paginator(posts, 2)
+p.num_pages #shows number of pages
+
+for page in p.page_range:
+    print(page)
